@@ -1,0 +1,38 @@
+# VCS
+.git
+.gitignore
+.gitattributes
+
+# CI / editor / OS
+.github
+.vscode
+.idea
+.DS_Store
+*.swp
+
+# Docs
+*.md
+LICENSE*
+
+# Ops tree is not part of the Go build
+ops/
+
+# Integration tests live outside cmd/server's import graph
+dev/test/
+
+# Secrets / local env
+*.env
+*.env.*
+.env*
+
+# Build artifacts
+/bin
+/out
+*.exe
+*.test
+*.out
+coverage.*
+
+# Container artifacts (already known to the build)
+Dockerfile
+.dockerignore
